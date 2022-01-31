@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-family: "Arial ";
+}
+
+header {
+  width: 100%;
+  height: 60px;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav .nav-right-section {
+  width: 250px;
+  height: auto;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .nav-right-section a {
+  margin-right: 10px;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav .nav-right-section .menu-icon {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/566/566001.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+}
+
+nav .nav-right-section img {
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+main {
+  margin-top: 100px;
+  text-align: center;
+}
+
+main .main-logo {
+  width: 530px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+main .main-logo img {
+  width: 300px;
+}
+
+main .main-input {
+  width: 530px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+main .main-input-container {
+  width: 525px;
+  border-radius: 100px;
+  border: 1px solid #dfe1e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main-input input {
+  width: 450px;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+
+main .main-input-container:hover {
+  box-shadow: 0 1px 6px 0 #20212447;
+  border-color: #dfe1e500;
+}
+
+main .main-input .search-icon {
+  background-image: url("data:image/png;base64,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");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+main .main-input .micro-icon {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+main .main-bottons {
+  width: 530px;
+  margin: 0 auto;
+}
+
+main .main-bottons div {
+  display: inline-block;
+}
+
+main .main-bottons button {
+  height: 36px;
+  background-color: #f2f2f2;
+  border: 0;
+  font-size: 14px;
+  color: #5f6368;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin-right: 15px;
+}
+
+main .main-bottons button:hover {
+  border: 1px solid #c6c6c6;
+  box-sizing: 0 1px 1px #000;
+  color: #222;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  font-size: 13px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+}
+
+footer ul {
+  margin: 10px;
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+
+footer .footer-left {
+  justify-content: left;
+}
+
+footer .footer-right {
+  justify-content: right;
+}
+
+footer ul li a {
+  margin: 10px;
+  color: #5f6368;
+}
